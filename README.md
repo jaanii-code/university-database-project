@@ -5,15 +5,21 @@ This project is a relational database system designed to manage a university env
 
 ### Features
 Student Management: Stores unique student details (ID, name, email).
+
 Course Management: Organizes courses and links them to instructors.
+
 Instructor Management: Stores instructor details and assigns courses.
+
 Enrollment System: Handles many-to-many relationships between students and courses.
+
 Grade Management: Tracks grades per student per course for performance analysis.
-## Database Design
+
+### Database Design
 Tables: Students, Courses, Instructors, Enrollments
 Relationships:
 Students ↔ Enrollments ↔ Courses (Many-to-Many)
 Courses ↔ Course_Instructors ↔ Instructors (Many-to-Many with semester/year)
+
 Constraints include primary keys, foreign keys, unique emails, and proper data types for dates and grades.
 
 ## Sample Queries
