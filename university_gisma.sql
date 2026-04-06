@@ -97,7 +97,16 @@ INSERT INTO Instructors (instructor_id, first_name, last_name, email, phone_numb
 (205, 'Layla', 'Ibrahim', 'l.ibrahim@gisma.edu', '4930111005', 'Marketing');
 SELECT * FROM Instructors;
 
-S
+INSERT INTO Course_Instructors (course_id, instructor_id,semester, year) VALUES
+(101, 1, 'Spring', 2024),
+(102, 1, 'Spring', 2025),
+(304, 2, 'Spring', 2026),
+(304, 2,  'Spring',2023),
+(305, 2, 'Fall', 2024),
+(306, 1,  'Spring',2022),
+(307, 1, 'Spring',2020),
+(308, 1,'Spring', 2021);
+SELECT * FROM Course_Instructors;
 
 
 
@@ -162,16 +171,7 @@ WHERE e.year = 2024
 GROUP BY s.student_id
 ORDER BY total_credits DESC;
 
-INSERT INTO Course_Instructors (course_id, instructor_id,semester, year) VALUES
-(101, 1, 'Spring', 2024),
-(102, 1, 'Spring', 2025),
-(304, 2, 'Spring', 2026),
-(304, 2,  'Spring',2023),
-(305, 2, 'Fall', 2024),
-(306, 1,  'Spring',2022),
-(307, 1, 'Spring',2020),
-(308, 1,'Spring', 2021);
-SELECT * FROM Course_Instructors;
+
 
 
 
