@@ -1,5 +1,5 @@
 ## University Management System Database
-# Project Overview
+### Project Overview
 
 This project is a relational database system designed to manage a university environment. It handles students, courses, instructors, enrollments, and grades, demonstrating proper database design, normalization, and SQL query implementation.
 
