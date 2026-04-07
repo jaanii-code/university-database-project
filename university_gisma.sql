@@ -172,7 +172,10 @@ GROUP BY s.student_id
 ORDER BY total_credits DESC;
 
 
-
+SELECT c.course_name, COUNT(e.student_id)
+FROM Courses c
+LEFT JOIN Enrollments e ON c.course_id = e.course_id
+GROUP BY c.course_name;
 
 
 
